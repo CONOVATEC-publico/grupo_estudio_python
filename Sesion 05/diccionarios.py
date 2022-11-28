@@ -157,9 +157,9 @@ def cantidadDias(dia,mes):
     total+=dia
     return total
 
-cantidadDias=cantidadDias(13,"Noviembre")
-print ("cantidad:::",cantidadDias)
-print("dia:::",calcularDia(cantidadDias,dia0))
+cantidad_Dias=cantidadDias(13,"Noviembre")
+print ("cantidad:::",cantidad_Dias)
+print("dia:::",calcularDia(cantidad_Dias,dia0))
 
 
 def seleccionarDias(fecha):
@@ -171,10 +171,6 @@ def seleccionarDias(fecha):
 def determinarMes(fecha):
 
     return "Noviembre"
-
-
-
-
 
 
 """
