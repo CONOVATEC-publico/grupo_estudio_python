@@ -157,12 +157,13 @@ def cantidadDias(dia,mes):
     total+=dia
     return total
 
-cantidadDias=cantidadDias(13,"Noviembre")
-print ("cantidad:::",cantidadDias)
-print("dia:::",calcularDia(cantidadDias,dia0))
+cantidad_Dias=cantidadDias(13,"Noviembre")
+print ("cantidad:::",cantidad_Dias)
+print("dia:::",calcularDia(cantidad_Dias,dia0))
 
 
 def seleccionarDias(fecha):
+    
 
     return 13
 
@@ -178,10 +179,6 @@ def determinarMes(fecha: str) -> str:
     d, m, a = fecha.split('/')
     return listaDiccionario_meses_dias[int(m)-1]["mes"]
         
-
-
-
-
 
 """
 4.Escribir una función que reciba una cantidad N de iteraciones de una tirada de 2 dados, y devuelva la cantidad de veces que se observa cada valor de la suma de los dos dados. Nota: utilizar el módulo random para obtener tiradas aleatorias.
