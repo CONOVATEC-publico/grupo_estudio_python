@@ -168,10 +168,17 @@ def seleccionarDias(fecha):
     return 13
 
 
-def determinarMes(fecha):
+def determinarMes(fecha: str) -> str:
+    """Obtener el nombre del mes segun una fecha ingresada.
 
-    return "Noviembre"
-
+    Ejemplo:
+        Entrada: 15/11/2022
+        Salida: Noviembre
+   """
+    
+    d, m, a = fecha.split('/')
+    return listaDiccionario_meses_dias[int(m)-1]["mes"]
+        
 
 """
 4.Escribir una función que reciba una cantidad N de iteraciones de una tirada de 2 dados, y devuelva la cantidad de veces que se observa cada valor de la suma de los dos dados. Nota: utilizar el módulo random para obtener tiradas aleatorias.
