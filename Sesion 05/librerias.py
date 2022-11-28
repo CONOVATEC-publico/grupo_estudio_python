@@ -45,9 +45,13 @@ def determinarFecha(fecha):
     print(dia_str,",",lista_cadena[0]," de ",mes)
 
 
+def determinarMes(fecha: str) -> str:
+    """Obtener el nombre del mes segun una fecha ingresada.
 
-
-def determinarMes(fecha):
-
-    return "Noviembre"
-
+    Ejemplo:
+        Entrada: 15/11/2022
+        Salida: Noviembre
+   """
+    
+    d, m, a = fecha.split('/')
+    return listaDiccionario_meses_dias[int(m)-1]["mes"]
