@@ -167,10 +167,17 @@ def seleccionarDias(fecha):
     return 13
 
 
-def determinarMes(fecha):
+def determinarMes(fecha: str) -> str:
+    """Obtener el nombre del mes segun una fecha ingresada.
 
-    return "Noviembre"
-
+    Ejemplo:
+        Entrada: 15/11/2022
+        Salida: Noviembre
+   """
+    
+    d, m, a = fecha.split('/')
+    return listaDiccionario_meses_dias[int(m)-1]["mes"]
+        
 
 
 
